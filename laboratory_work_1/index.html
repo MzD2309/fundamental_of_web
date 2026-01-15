@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Домашняя страница — Михаил Задолинный</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <header class="site-header">
+            <nav class="nav">
+                <a class="logo" href="#top" aria-label="На главную">МЗ</a>
+                <ul class="nav-list">
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#skills">Навыки</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero" id="top">
+                <img src="images/image.jpg" alt="Картинка" class="beautiful_image"> 
+                <div class="hero-text">
+                    <h1>Привет! Я Михаил, студент Московского Политеха</h1>
+                    <p>Изучаю основы веб‑технологий, делаю учебные проекты и прокачиваю навыки фронтенда. 
+                        Интересуюсь доступностью интерфейсов и аккуратным кодом.</p>                    
+                </div>
+            </section>
+            
+            <section id="about" class="section">
+                <h2>Обо мне</h2>
+                <p>
+                    Меня зовут Задолинный Михаил Дмитриевич. Учусь на 2 курсе Московского политехнического университета.
+                    В этом семестре начал системно изучать веб: HTML, CSS и основы JavaScript. Ценю понятные интерфейсы,
+                    семантичную разметку и аккуратный визуал. Люблю учиться новому и доводить работу до результата.
+                </p>
+            </section>
+
+            
+
+            <section id="skills" class="section">
+                <h2>Навыки</h2>
+                <p>Мои текущие сильные стороны и направления развития:</p>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Навык</th>
+                                <th>Уровень</th>
+                                <th>Опыт</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Python</td>
+                                <td>Базовый+</td>
+                                <td>Учебные проекты</td>
+                            </tr>
+                            <tr>
+                                <td>Java</td>
+                                <td>Базовый+</td>
+                                <td>Учебные проекты</td>
+                            </tr>
+                            <tr>
+                                <td>HTML5 (семантика)</td>
+                                <td>Базовый+</td>
+                                <td>Учебные проекты</td>
+                            </tr>
+                            <tr>
+                                <td>CSS (Flexbox, Grid)</td>
+                                <td>Базовый</td>
+                                <td>Практика в лабораторных</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>            
+        </main>
+
+        <footer class="site-footer">
+            <section id="contacts" class="section">
+                <h2>Контакты</h2>
+                <div class="contacts">
+                    <div class="contacts-item">
+                        <img class="contact-icon" src="images/phone.png" alt="Телефон">
+                        <div>
+                            <a href="tel:+79852237810">+7 (985) 223‑78‑10</a><br>
+                            <a href="tel:+79374101796">+7 (937) 410‑17‑96</a>
+                        </div>
+                    </div>
+                    <div class="contacts-item">
+                        <img class="contact-icon" src="images/mail.png" alt="Email">
+                        <div>
+                            <a href="mailto:mzd2313@mail.ru">mzd2313@mail.ru</a>
+                        </div>
+                    </div>
+                    <div class="contacts-item">
+                        <img class="contact-icon" src="images/telegram.png" alt="Telegram">
+                        <div>
+                            <a href="https://t.me/MzD2313" target="_blank" rel="noopener">Telegram: @MzD2313</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <p>© 2025 Михаил Задолинный. Учебный проект по дисциплине «Основы веб‑технологий».</p>
+        </footer>
+    </body>
+</html>

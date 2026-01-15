@@ -1,0 +1,235 @@
+:root {
+    --bg: #0f172a;
+    --panel: #1e293b;
+    --text: #e5e7eb;
+    --muted: #9ca3af;
+    --primary: #60a5fa;
+    --primary-600: #3b82f6;
+    --border: #374151;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Inter", system-ui;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.6;
+}
+
+img { 
+    display: block; 
+    max-width: 100%; 
+    height: auto; 
+}
+
+a { 
+    color: var(--primary); 
+    text-decoration: none; 
+}
+
+a:hover { 
+    color: var(--primary-600); 
+}
+
+/* Контейнер секций */
+.section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 { 
+    font-family: "Montserrat", sans-serif; 
+    margin: 0 0 16px; 
+}
+
+h1 { 
+    font-size: 36px; 
+    line-height: 1.2; 
+}
+
+h2 { 
+    font-size: 28px; 
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+h3 { 
+    font-size: 20px; 
+}
+
+p { 
+    margin: 0 0 16px; 
+    color: var(--text); 
+}
+
+/* Навигация */
+.site-header {
+    background: var(--panel);
+    border-bottom: 1px solid var(--border);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 16px 20px;
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: var(--primary);
+    color: white;
+    font-weight: 700;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list a {
+    color: var(--text);
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: color 0.3s;
+}
+
+.nav-list a:hover {
+    color: var(--primary);
+}
+
+/* Hero */
+.hero {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 80px 20px 40px;
+    text-align: center;
+}
+
+.hero-text p { 
+    color: var(--muted); 
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Таблица навыков */
+.table-wrapper {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+}
+
+thead { 
+    background: var(--bg); 
+}
+
+th, td { 
+    padding: 16px 20px; 
+    text-align: left; 
+}
+
+th { 
+    font-weight: 600; 
+    color: var(--text); 
+}
+
+tbody tr { 
+    border-top: 1px solid var(--border); 
+}
+
+
+
+tbody td { 
+    color: var(--muted); 
+}
+
+/* Контакты - обновленная стилизация */
+.contacts { 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.contacts-item { 
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: var(--panel);
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    transition: transform 0.2s;
+    flex: 1 1 300px;        /* Главная магия! */
+    min-width: 300px;
+    max-width: 400px;
+}
+
+.contacts-item:hover {
+    transform: translateY(-2px);
+}
+
+.contact-icon { 
+    width: 32px; 
+    height: 32px; 
+    object-fit: contain; 
+    display: block;
+    flex-shrink: 0;
+}
+
+.contacts-item div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.contacts-item a {
+    color: var(--text);
+    transition: color 0.3s;
+}
+
+.contacts-item a:hover {
+    color: var(--primary);
+}
+
+/* Футер */
+.site-footer {
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 40px;
+}
+
+.beautiful_image {
+    padding: 10px;
+    
+}

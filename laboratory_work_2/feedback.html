@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма обратной связи</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-image">
+        <img src="images/image.jpg" alt="Фон">
+    </div>
+
+    <section class="form-wrapper">
+        <form action="https://httpbin.org/post" method="post" class="form-content">
+            
+            <input type="text" name="fullname" class="input-field" placeholder="ФИО" maxlength="50" required>
+            
+            <input type="email" name="email" class="input-field" placeholder="email" required>
+
+            <div class="radio-list">
+                <div class="radio-group">
+                    <input type="radio" id="source_friend" name="source" value="friends" checked>
+                    <label for="source_friend">От друга</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="source_internet" name="source" value="internet">
+                    <label for="source_internet">Из интернета</label>
+                </div>
+            </div>
+
+            <select name="topic" class="input-field">
+                <option value="complaint">Жалоба</option>
+                <option value="suggestion">Предложение</option>
+            </select>
+
+            <textarea name="message" class="input-field textarea-field" rows="4" required></textarea>
+
+            <div style="font-size: 14px;">
+                <input type="file" name="attachment">    
+            </div>
+
+            <div class="checkbox-group" style="flex-direction: row; align-items: start; text-align: left; width: 90%;">
+                <input type="checkbox" name="consent" value="yes" id="consent" required style="margin-top: 4px;"> 
+                <label for="consent" style="font-size: 14px;">Даю согласие на обработку персональных данных</label>
+            </div>
+
+            <input type="submit" class="btn" value="Отправить">
+            
+        </form>
+    </section>
+</body>
+</html>

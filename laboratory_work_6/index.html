@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Лабораторная работа №6 — Основы JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <h1>Лабораторная работа №6: Основы JavaScript</h1>
+            <p class="subtitle">Функции: pow, gcd, minDigit, pluralizeRecords, fibb</p>
+        </header>
+
+        <main class="content">
+            <!-- 1. pow(x, n) -->
+            <section class="card" id="pow-section">
+                <h2>1. Возведение в степень — функция <code>pow(x, n)</code></h2>
+                <p class="card__desc">
+                    Возвращает значение <strong>x</strong> в степени <strong>n</strong>,
+                    умножая <strong>x</strong> само на себя <strong>n</strong> раз.
+                    Поддерживаются только натуральные значения <strong>n</strong> (&gt;= 1).
+                </p>
+                <div class="form-row">
+                    <label>
+                        x:
+                        <input type="number" id="pow-x" value="2" />
+                    </label>
+                    <label>
+                        n (натуральное):
+                        <input type="number" id="pow-n" value="5" min="1" />
+                    </label>
+                    <button type="button" class="btn" id="pow-run">Вычислить</button>
+                </div>
+                <div class="result" id="pow-result">Результат будет показан здесь</div>
+            </section>
+
+            <!-- 2. gcd(a, b) -->
+            <section class="card" id="gcd-section">
+                <h2>2. Наибольший общий делитель — функция <code>gcd(a, b)</code></h2>
+                <p class="card__desc">
+                    Находит наибольший общий делитель двух неотрицательных целых чисел
+                    <strong>a</strong> и <strong>b</strong>.
+                </p>
+                <div class="form-row">
+                    <label>
+                        a:
+                        <input type="number" id="gcd-a" value="48" min="0" />
+                    </label>
+                    <label>
+                        b:
+                        <input type="number" id="gcd-b" value="18" min="0" />
+                    </label>
+                    <button type="button" class="btn" id="gcd-run">Найти НОД</button>
+                </div>
+                <div class="result" id="gcd-result">Результат будет показан здесь</div>
+            </section>
+
+            <!-- 3. minDigit(x) -->
+            <section class="card" id="minDigit-section">
+                <h2>3. Наименьшая цифра числа — функция <code>minDigit(x)</code></h2>
+                <p class="card__desc">
+                    Возвращает наименьшую цифру целого неотрицательного числа <strong>x</strong>.
+                </p>
+                <div class="form-row">
+                    <label>
+                        x (целое неотрицательное):
+                        <input type="number" id="minDigit-x" value="507349" min="0" />
+                    </label>
+                    <button type="button" class="btn" id="minDigit-run">Найти цифру</button>
+                </div>
+                <div class="result" id="minDigit-result">Результат будет показан здесь</div>
+            </section>
+
+            <!-- 4. pluralizeRecords(n) -->
+            <section class="card" id="plural-section">
+                <h2>4. Плюрализация — функция <code>pluralizeRecords(n)</code></h2>
+                <p class="card__desc">
+                    Формирует корректную фразу вида
+                    <em>«В результате выполнения запроса было найдено n записей»</em>
+                    с правильной формой слова «запись» в зависимости от <strong>n</strong>.
+                </p>
+                <div class="form-row">
+                    <label>
+                        n (целое неотрицательное):
+                        <input type="number" id="plural-n" value="5" min="0" />
+                    </label>
+                    <button type="button" class="btn" id="plural-run">Сформировать фразу</button>
+                </div>
+                <div class="result" id="plural-result">Результат будет показан здесь</div>
+            </section>
+
+            <!-- 5. fibb(n) -->
+            <section class="card" id="fibb-section">
+                <h2>5. Числа Фибоначчи — функция <code>fibb(n)</code></h2>
+                <p class="card__desc">
+                    Возвращает <strong>n</strong>-е число последовательности Фибоначчи
+                    для целого неотрицательного <strong>n ≤ 1000</strong>.
+                    Для больших значений используется <code>BigInt</code>, результат
+                    выводится как строка.
+                </p>
+                <div class="form-row">
+                    <label>
+                        n (0 ≤ n ≤ 1000):
+                        <input type="number" id="fibb-n" value="10" min="0" max="1000" />
+                    </label>
+                    <button type="button" class="btn" id="fibb-run">Вычислить fibb(n)</button>
+                </div>
+                <div class="result" id="fibb-result">Результат будет показан здесь</div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>Лабораторная работа №6 по дисциплине «Основы веб-разработки».</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
